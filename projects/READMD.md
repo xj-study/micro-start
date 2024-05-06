@@ -39,7 +39,7 @@
 
 ```js
 <script>
-  console.log('你好，再见')
+console.log('你好，再见')
 </script>
 ```
 
@@ -63,19 +63,60 @@
 终于迎来了 ES6 的模块化语法，import and export !
 
 ```js
-
 // index.html
 <script type="module">
-import callNB from './nb.js';
+import callNB from './nb.js'; 
 callNB();
 </script>
 
 // nb.js
 export function callNB() {
-  console.log('Ni heng NB! wo shuo de!');
+  console.log('Ni heng NB! wo shuo de!')
 }
 ```
 
+嗯，，，
 
+上述的胡言乱语可以忽略了，咱们进入正文。
 
+在掌控微前端之前，我们先来消化一下几个基础的技术点：
 
+### fetch
+
+fetch() 方法是 Fetch API 提供的一个 JS 接口，可以用来异步获取资源。
+
+比如获取一个 js 文件，一个 json 文件，或者是一个 css 文件。
+
+我们先来体验一下获取 js 文件，
+
+首先，整个 html 页面，
+
+```html
+<script>
+  const url = './index.js'
+  fetch(url).then((res) => {
+    console.log('fetch 一下')
+    // 文本数据
+    res.text().then((code) => {
+      console.log(code)
+    })
+  })
+</script>
+```
+
+注意：只摘取了 body 里的 script 标签内容。
+
+同目录下再整个 js 文件，
+
+```js
+// index.js
+console.log('Hello in js file')
+```
+
+给目录取个名字，就叫 ch01-load 。
+
+然后，浏览器打开
+
+![效果图](./images/image001.png)
+
+浏览器他好心提示我们跨域了。

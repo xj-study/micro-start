@@ -7,9 +7,8 @@
     <title>Document</title>
   </head>
   <body>
-    Hello H5
-    <script src="./index.js"></script>
-    <script type="module">
+    <!-- <script src="./index.js"></script> -->
+    <!-- <script type="module">
       import test from './test.js'
       test()
     </script>
@@ -20,6 +19,28 @@
     <script type="module">
       import { load } from './utils.js'
       load('./test2.js')
+    </script> -->
+
+    <script>
+      // const url = 'https://img1.bdstatic.com/static/common/mod_6f6741d.js'
+      const url = './index.js'
+      // const url = 'https://img.soogif.com/PmjS6S1biTjH241gxFXpjxOJYjYjZRjn.jpg_s400x0'
+      fetch(url).then((res) => {
+        console.log('fetch 一下')
+        // 文本数据
+        res.text().then((code) => {
+          console.log(code)
+        })
+        // 二进制数据
+        // res.blob().then((data) => {
+        //   console.log('img data', data)
+        //   const img = document.createElement('img')
+        //   img.src = URL.createObjectURL(data)
+        //   document.body.appendChild(img)
+        // })
+      })
     </script>
+
+    <script></script>
   </body>
 </html>
