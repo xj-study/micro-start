@@ -135,10 +135,9 @@ file:///Users/xiejun/Documents/public/micro-start/projects/ch01-load/index.js
 
 我们来仔细看下报错信息：
 
-<div style="color: red">
+<font color="red">
 CORS policy: Cross origin requests are only supported for protocol schemes: http, data, isolated-app, chrome-extension, chrome, https, chrome-untrusted.
-</div>
-
+</font>
 
 他说他那个跨域只支持上面那些协议。
 
