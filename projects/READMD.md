@@ -119,4 +119,26 @@ console.log('Hello in js file')
 
 ![效果图](./images/image001.png)
 
+嗯？报错了！
+
 浏览器他好心提示我们跨域了。
+
+这个 fetch 函数很友好呀，明明只是通过浏览器打开一个本地的 html 文件，获取的也是本地的一个 js 文件，他竟然提醒我们跨域了！
+
+怎么可能跨域呢？
+
+我们明明走的是 file 协议好吧！
+
+```shell
+file:///Users/xiejun/Documents/public/micro-start/projects/ch01-load/index.js
+```
+
+我们来仔细看下报错信息：
+
+<div style="color: red">
+CORS policy: Cross origin requests are only supported for protocol schemes: http, data, isolated-app, chrome-extension, chrome, https, chrome-untrusted.
+</div>
+
+
+他说他那个跨域只支持上面那些协议。
+
