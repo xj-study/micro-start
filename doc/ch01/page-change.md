@@ -1,4 +1,4 @@
-[返回](../README.md)
+[返回](/README.md)
 
 ### 页面切换
 
@@ -48,7 +48,7 @@ function pageHome() {
 
 运行效果如下：
 
-![图片](./images/ch01/img002.png)
+![图片](../images/ch01/img002.png)
 
 我们可以通过依次点击 页面1，页面2，首页 来完成页面内容的切换。
 

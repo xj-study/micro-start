@@ -1,4 +1,4 @@
-[返回](../README.md)
+[返回](/README.md)
 
 ### 页面切换 v3
 
@@ -102,7 +102,7 @@ function pageHome() {
 
 运行效果如下：
 
-![图片](./images/ch01/img002.png)
+![图片](../images/ch01/img002.png)
 
 我们可以通过点击那几个链接完成页面的切换。
 

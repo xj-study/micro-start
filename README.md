@@ -38,25 +38,25 @@
 
 先来搭个台子，JS 跑起来还是非常方便的，有个浏览器就行
 
-[准备工作](./doc/01-start.md)
+[准备工作](./doc/ch01/start.md)
 
 ### 页面切换
 
 单个页面有点单调，我们来尝试一下页面切换
 
-[页面切换 v1](./doc/01-page-change.md)
+[页面切换 v1](./doc/ch01/page-change.md)
 
-[页面切换 v2](./doc/01-page-change-v2.md)
+[页面切换 v2](./doc/ch01/page-change-v2.md)
 
-[页面切换 v3](./doc/01-page-change-v3.md)
+[页面切换 v3](./doc/ch01/page-change-v3.md)
 
-[页面切换 v4](./doc/01-page-change-v4.md)
+[页面切换 v4](./doc/ch01/page-change-v4.md)
 
-### 异步页面切换
+### 动态加载页面
 
-为每个页面单独整个 JS 文件，然后异步获取
+按需动态加载页面
 
-[异步页面切换](./doc/01-page-change-async.md)
+[动态加载页面](./doc/ch01/page-change-async.md)
 
 ### 页面升级为应用
 
