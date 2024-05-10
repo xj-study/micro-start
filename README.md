@@ -48,6 +48,8 @@
 
 [页面切换 v2](./doc/01-page-change-v2.md)
 
+[页面切换 v3](./doc/01-page-change-v3.md)
+
 ### 异步页面切换
 
 为每个页面单独整个 JS 文件，然后异步获取
