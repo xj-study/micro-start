@@ -44,11 +44,14 @@
 
 单个页面有点单调，我们来尝试一下页面切换
 
-[页面切换](./doc/01-page-change.md)
+[页面切换 v1](./doc/01-page-change.md)
+[页面切换 v2](./doc/01-page-change-v2.md)
 
 ### 异步页面切换
 
 为每个页面单独整个 JS 文件，然后异步获取
+
+[异步页面切换](./doc/01-page-change-async.md)
 
 ### 页面升级为应用
 
