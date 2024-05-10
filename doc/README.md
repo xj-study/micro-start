@@ -38,7 +38,7 @@
 
 先来搭个台子，JS 跑起来还是非常方便的，有个浏览器就行
 
-[start](./doc/start.md)
+[start](./start.md)
 
 ### 页面切换
 
