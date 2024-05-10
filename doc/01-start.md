@@ -1,4 +1,3 @@
-#### 导航
 
 [返回](../README.md)
 
@@ -77,4 +76,5 @@ document.body.appendChild(node)
 
 ![img001](./images/start/img001.png)
 
-我们发现，浏览加载完 index.html 文件之后，接着又去加载 main.js 文件了。
+我们发现，浏览加载完 index.html 文件之后，接着又去加载 main.js 文件了，这也是与第一种方式很大的一个区别了。
+
