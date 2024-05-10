@@ -74,7 +74,7 @@ document.body.appendChild(node)
 
 效果跟第一种方式是一样的：
 
-![img001](./images/start/img001.png)
+![img001](./images/ch01/img001.png)
 
 我们发现，浏览加载完 index.html 文件之后，接着又去加载 main.js 文件了，这也是与第一种方式很大的一个区别了。
 
