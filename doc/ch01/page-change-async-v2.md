@@ -2,48 +2,41 @@
 
 ### 动态加载页面
 
-之前我们实现了一个页面切换框架，请允许我称他为框架。
+简单回顾一下上个版本实现的功能：
 
-这个框架非常 low，估计不会有人使用，毕竟他每增加一个页面，就得修改三个地方！
+当切换到页面 page1 时，根据当时页面的映射配置表，我们委托浏览器帮忙加载页面对应的 js 文件，
 
-为了让这个框架接受度高一点，
+然后，就没然后了，，，
 
-于是，我们不得不增加一个新的特性：
+此时，函数 update 根据对应的 hash 值，找到的 render 方法执行之后，只完成了页面加载。
 
-动态加载页面！
+接下来就是执行页面对应的 render 函数，更新页面了！
 
-怎么实现呢？
-
-首先，我们修改一下页面映射表：
+我们来观察一下 page1.js ：
 
 ```js
-// main.js
-const routeConfig = [
-  { path: 'page1', entry: './page1.js' }, // 修改
-  { path: 'page2', render: page2 },
-  { path: '', render: pageHome },
-]
-
-route(routeConfig)
+function page1() {
+  const container = document.getElementById('app')
+  container.innerHTML = '页面1'
+}
 ```
 
-render 这么强大的功能，我们还是要保留一下的。
+当浏览器顺利加载并执行 page1.js 之后，在对象 window 下就多了一个 page1 方法。
 
-我们增加一个 entry 属性，用来配置页面的相关文件，比如，页面对应的 js 文件地址。
+我们完全可以在 js 文件加载完成之后，执行一下方法 page1 即可。
 
-接下来我们来实现一下动态加载功能：
+实现如下所示：
 
 ```js
-// route.js
-
-// 省略部分代码
-
-// 修改
 function resolveConfig(config) {
   for (let i = 0; i < config.length; i++) {
     let { path, render, entry } = config[i]
     if (!render && entry) {
-      render = () => loadPage(entry)
+      // 修改
+      render = async () => {
+        await loadPage(entry)
+        page1()
+      }
     }
 
     if (render) {
@@ -51,42 +44,34 @@ function resolveConfig(config) {
     }
   }
 }
-// 新增
-// 动态加载页面
-function loadPage(entry) {
-  return new Promise((resolve, reject) => {
-    const node = document.createElement('script')
-    node.src = entry
-    node.onload = () => {
-      resolve()
-    }
-    document.head.appendChild(node)
-  })
-}
 
 // 省略部分代码
 ```
 
-我们通过实现一个新函数 loadPage 来完成页面 js 文件的动态加载，
+OK，功能实现了。
 
-然后，重构一下函数 resolveConfig ，当页面配置对象没有配置 render 而只配置了 entry 时，就设置一下 render 的值：
-
-```js
-if (!render && entry) {
-  render = () => loadPage(entry)
-}
-```
-
-顺手将 routeMap 里的值也包装一下：
+接下来，我们把剩下的页面都整成动态按需加载：
 
 ```js
-routeMap.set(path, () => Promise.resolve().then(render))
+const routeConfig = [
+  { path: 'page1', entry: './page1.js' },
+  { path: 'page2', entry: './page2.js' }, // 修改
+  { path: '', entry: './pageHome.js' }, // 修改
+]
 ```
 
-这样 render 值的形为更统一一点。
+跑一下看看，，，
 
-这时，我们切换到 page1 ，页面内容是不会变化的，
+嗯，程序无法正常运行了！
 
-我们现在只实现了动态加载页面，当执行函数 update 时，对应页面的 render 处理函数并没有执行。
+很显然，这个问题一眼就能看出来。
 
-这，就需要放到下个版本里，实现了。
+我们之前写死了页面的渲染的方法。
+
+怎么办呢？
+
+约定一个函数名？比如都取 render ?
+
+也不行，这时就会出现函数覆盖的问题，毕竟大家都是往 window 上放的。
+
+这时，我们就可以引入 ES6 的模块支持了。

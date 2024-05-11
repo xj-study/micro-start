@@ -10,8 +10,8 @@ function resolveConfig(config) {
     let { path, render, entry } = config[i]
     if (!render && entry) {
       render = async () => {
-        await loadPage(entry)
-        page1()
+        const { render } = await loadPage(entry)
+        render()
       }
     }
 
@@ -23,14 +23,7 @@ function resolveConfig(config) {
 
 // 动态加载页面
 function loadPage(entry) {
-  return new Promise((resolve, reject) => {
-    const node = document.createElement('script')
-    node.src = entry
-    node.onload = () => {
-      resolve()
-    }
-    document.head.appendChild(node)
-  })
+  return import(entry)
 }
 
 function addRouteEvent() {
