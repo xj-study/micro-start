@@ -44,7 +44,7 @@
 
 单个页面有点单调，我们来尝试一下页面切换
 
-[页面切换 v1](./doc/ch01/page-change.md)
+[页面切换 v1](./doc/ch01/page-change-v1.md)
 
 [页面切换 v2](./doc/ch01/page-change-v2.md)
 
@@ -56,7 +56,9 @@
 
 按需动态加载页面
 
-[动态加载页面](./doc/ch01/page-change-async.md)
+[动态加载页面 v1](./doc/ch01/page-change-async-v1.md)
+
+[动态加载页面 v2](./doc/ch01/page-change-async-v2.md)
 
 ### 页面升级为应用
 

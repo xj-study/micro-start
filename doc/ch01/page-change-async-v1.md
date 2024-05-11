@@ -89,4 +89,4 @@ routeMap.set(path, () => Promise.resolve().then(render))
 
 我们现在只实现了动态加载页面，当执行函数 update 时，对应页面的 render 处理函数并没有执行。
 
-就这需要放到下个版本里实现了。
+这，就需要放到下个版本里，实现了。
