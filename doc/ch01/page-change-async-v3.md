@@ -58,7 +58,7 @@ function loadPage(entry) {
 
 ![图片](./../images/ch01/img005.png)
 
-安装好后，选中对应的 html 文件右键：
+安装好后，选中对应的 html 文件，然后右键：
 
 ![图片](./../images/ch01/img006.png)
 
@@ -74,7 +74,7 @@ function loadPage(entry) {
 
 ![图片](./../images/ch01/img008.png)
 
-通过点击切换启动关闭服务状态。
+通过点击切换启动关闭服务。
 
 也不用太担心 import 的兼容性问题：
 
