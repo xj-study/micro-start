@@ -64,6 +64,8 @@
 
 [动态加载页面 v4](./doc/ch01/page-change-async-v4.md)
 
+[动态加载页面 v5](./doc/ch01/page-change-async-v5.md)
+
 ### 页面升级为应用
 
 不妨扩展一下页面，我们将多个页面整合成一个独立的应用，，，
