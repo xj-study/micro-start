@@ -186,7 +186,7 @@ function update(path) {
 
 主要优化了两个地方，
 
-能过将 eval 执行得到的函数与 entry 保存下来，然后在函数 fetchJscript 执行前判断一下对应的函数值是否存在，来优化多次加载问题；
+通过将 eval 执行得到的函数与 entry 保存下来，然后在函数 fetchJscript 执行前判断一下对应的函数值是否存在，来优化多次加载问题；
 
 然后，在函数 evalCode 中，优化取 evalCodeMap 里保存的函数，进一步优化了 eval 多次执行问题。
 
