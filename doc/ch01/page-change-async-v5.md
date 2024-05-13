@@ -39,7 +39,7 @@ function loadPage(entry) {
 
 然后使用 eval 执行取得的代码。
 
-通过 `function(){}` 包裹之后，也不会污染全局作用域，就体现了一个字，安全。
+经过 `function(){}` 包裹之后，也不会污染全局作用域，就体现了一个字，安全。
 
 然后，修改一下函数 resolveConfig ：
 
