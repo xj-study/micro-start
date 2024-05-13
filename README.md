@@ -68,7 +68,7 @@ github 访问太慢怎么办？
 
 不妨扩展一下页面，我们将多个页面整合成一个独立的应用，然后实现应用间的切换
 
-[页面升级为应用 v1](./doc/ch01/page-change-async-v1.md)
+[页面升级为应用 v1](./doc/ch01/page-to-app-v1.md)
 
 ### 微前端 DemoV1
 
