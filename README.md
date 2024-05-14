@@ -72,6 +72,8 @@ github 访问太慢怎么办？
 
 [页面升级为应用 v2](./doc/ch01/page-to-app-v2.md)
 
+[页面升级为应用 v3](./doc/ch01/page-to-app-v3.md)
+
 ### 微前端 DemoV1
 
 这就完成了一个简单的微前端了。

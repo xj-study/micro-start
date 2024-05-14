@@ -22,9 +22,11 @@ export function updateApps(path) {
   needUnmountApps.forEach(unmount)
   // 找到要启用的应用
   const needMountApps = registerApps.filter((app) => app.path == path)
+  // 修改
   needMount(needMountApps)
 }
 
+// 新增
 function needMount(apps) {
   for (let i = 0; i < apps.length; i++) {
     const app = apps[i]
