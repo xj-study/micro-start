@@ -39,7 +39,7 @@ body {
 把其中的 display 样式注释掉。
 
 效果如下图所示：
-![img](../images/ch01/img013.png)
+![img](../images/ch01/img013.png#pic-left=150x150)
 
 接下来就是功能扩展了，
 
