@@ -175,6 +175,7 @@ function fetchText(path, cache) {
 
 最后看下效果：
 
-![img](../images/ch01/img014.png)
+<!-- ![img](../images/ch01/img014.png) -->
+<img src="../images/ch01/img014.png" width="350px">
 
 样式应用上去后，页面漂亮多了。
