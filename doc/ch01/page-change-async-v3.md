@@ -46,7 +46,7 @@ function loadPage(entry) {
 
 运行一下看看效果
 
-![图片](./../images/ch01/img003.png)
+<img src="../images/ch01/img003.png" width="550px">
 
 看上去是一个很麻烦的问题，
 
@@ -56,29 +56,29 @@ function loadPage(entry) {
 
 我们可以使用 vscode 里丰富好用的插件，比如：
 
-![图片](./../images/ch01/img005.png)
+<img src="../images/ch01/img005.png" width="450px">
 
 安装好后，选中对应的 html 文件，然后右键：
 
-![图片](./../images/ch01/img006.png)
+<img src="../images/ch01/img006.png" width="350px">
 
 很快，服务就跑起来了！
 
 效果如下图所示：
 
-![图片](./../images/ch01/img007.png)
+<img src="../images/ch01/img007.png" width="350px">
 
 点击切换一下页面，非常 6 。
 
 在 vscode 的底下也能找到 live server ，
 
-![图片](./../images/ch01/img008.png)
+<img src="../images/ch01/img008.png" width="450px">
 
 通过点击切换启动关闭服务。
 
 也不用太担心 import 的兼容性问题：
 
-![图片](./../images/ch01/img004.png)
+<img src="../images/ch01/img004.png" width="650px">
 
 全球非常流行的 chrome 浏览器，2017 年已经支持了！
 

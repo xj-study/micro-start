@@ -43,17 +43,10 @@ function pageHome() {
   const container = document.getElementById('app')
   container.innerHTML = '首页'
 }
-
 ```
 
 运行效果如下：
 
-![图片](../images/ch01/img002.png)
+<img src="../images/ch01/img002.png" width="350px">
 
-我们可以通过依次点击 页面1，页面2，首页 来完成页面内容的切换。
-
-
-
-
-
-
+我们可以通过依次点击 页面 1，页面 2，首页 来完成页面内容的切换。

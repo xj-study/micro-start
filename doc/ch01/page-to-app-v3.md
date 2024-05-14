@@ -104,7 +104,7 @@ export default defineConfig({
 
 通过上面 build.lib 的配置，应用就会打包生成相应的 umd / es js 文件，如下图所示：
 
-![img](../images/ch01/img012.png)
+<img src="../images/ch01/img012.png" width="250px">
 
 需要注意的是，我们将应用中用到的 vue 框架代码给剥离了出来，并没有打包进应用的代码里。这就需要在我们的主应用里引用一下 vue :
 
@@ -136,6 +136,8 @@ export default defineConfig({
 
 通过上述一系列的重构之后，我们来测试一下应用切换：
 
-![img](../images/ch01/img010.png)
+<!-- ![img](../images/ch01/img010.png) -->
+
+<img src="../images/ch01/img010.png" width="450px">
 
 如上图所示，可以顺利的来回切换 vite 应用了。

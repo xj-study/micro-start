@@ -102,7 +102,7 @@ function pageHome() {
 
 运行效果如下：
 
-![图片](../images/ch01/img002.png)
+<img src="../images/ch01/img002.png" width="350px">
 
 我们可以通过点击那几个链接完成页面的切换。
 

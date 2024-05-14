@@ -91,7 +91,7 @@ function findWindowAddProps() {
 
 运行一下看看效果：
 
-![图片](../images/ch01/img009.png)
+<img src="../images/ch01/img009.png" width="550px">
 
 第一次点击页面是可以正常切换的，可第二次点击时，就报上图所示的错误了！
 

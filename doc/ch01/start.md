@@ -1,4 +1,3 @@
-
 [返回](/README.md)
 
 ### 准备工作
@@ -74,7 +73,6 @@ document.body.appendChild(node)
 
 效果跟第一种方式是一样的：
 
-![img001](../images/ch01/img001.png)
+<img src="../images/ch01/img001.png" width="650px">
 
 我们发现，浏览加载完 index.html 文件之后，接着又去加载 main.js 文件了，这也是与第一种方式很大的一个区别了。
-

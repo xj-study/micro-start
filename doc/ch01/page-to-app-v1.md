@@ -86,13 +86,13 @@ route(routeConfig)
 
 运行一下，看看切换到 vite 应用是什么效果：
 
-![图片](../images/ch01/img010.png)
+<img src="../images/ch01/img010.png" width="350px">
 
 还行，马马虎虎。
 
 我们来回切换看看：
 
-![图片](../images/ch01/img011.png)
+<img src="../images/ch01/img011.png" width="550px">
 
 报错了，页面也没有正常显示。
 
